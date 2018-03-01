@@ -10,6 +10,7 @@ class Taskell < Formula
     root_url "https://files.smallhadroncollider.com/taskell"
     cellar :any_skip_relocation
     sha256 "0fc1975a0845bd523af636a221999d7ae53729e0ca8061bc99a8ade64148f98a" => :high_sierra
+    sha256 "d0c1f95f206a7abcd1b6852aea34cd0fccf11d11a3eb8e880bbb1069739e4937" => :sierra
   end
 
   def install
