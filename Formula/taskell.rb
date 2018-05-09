@@ -1,15 +1,14 @@
 class Taskell < Formula
   desc "A command line kanban board/task manager written in Haskell"
   homepage "https://github.com/smallhadroncollider/taskell"
-  url "https://github.com/smallhadroncollider/taskell/archive/1.0.1.tar.gz"
-  sha256 "5f899bfab33fc972273b29977772313678339ac245017e6d28ae87cee66e20b7"
+  url "https://github.com/smallhadroncollider/taskell/archive/1.1.0.tar.gz"
+  sha256 "77ad4aaeb1121445f2f6f7553d75e0c1fa47734ac3089c4595b8ba1d27b9b126"
 
   depends_on "stack" => :build
 
   bottle do
     root_url "https://files.smallhadroncollider.com/taskell"
     cellar :any_skip_relocation
-    sha256 "81a9188fc69b27a2f59c0e403d3c93d2450869ff4b0a56ef6ec580cf65c223a6" => :high_sierra
   end
 
   def install
