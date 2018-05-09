@@ -9,6 +9,7 @@ class Taskell < Formula
   bottle do
     root_url "https://files.smallhadroncollider.com/taskell"
     cellar :any_skip_relocation
+    sha256 "23bb58449d4ea724a6cc47a1f95b8005c834c219fa0263de437b89008fe1978d" => :high_sierra
   end
 
   def install
