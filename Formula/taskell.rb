@@ -11,6 +11,7 @@ class Taskell < Formula
   bottle do
     root_url "https://taskell.app/bottles"
     cellar :any_skip_relocation
+    sha256 "57cf23299b7520f4088d640d4268d0d00633c91f859ad31427c73fb152ef6093" => :high_sierra
   end
 
   depends_on "cabal-install" => :build
