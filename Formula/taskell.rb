@@ -8,8 +8,13 @@ class Taskell < Formula
   url "https://github.com/smallhadroncollider/taskell/archive/1.2.5.tar.gz"
   sha256 "818055fcfe0656b3bcf00c37fdf2ddd5d2958bb169f5eda571bf4957e7aa64d8"
 
-  depends_on "ghc" => :build
+  bottle do
+    root_url "https://taskell.app/bottles"
+    cellar :any_skip_relocation
+  end
+
   depends_on "cabal-install" => :build
+  depends_on "ghc" => :build
 
   def install
     cabal_sandbox do
@@ -17,11 +22,6 @@ class Taskell < Formula
       system "./.cabal-sandbox/bin/hpack"
       install_cabal_package
     end
-  end
-
-  bottle do
-    root_url "https://taskell.app/bottles"
-    cellar :any_skip_relocation
   end
 
   test do
