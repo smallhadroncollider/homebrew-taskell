@@ -5,8 +5,8 @@ class Taskell < Formula
 
   desc "Command-line Kanban board/task manager with support for Trello"
   homepage "https://taskell.app"
-  url "https://github.com/smallhadroncollider/taskell/archive/1.2.4.tar.gz"
-  sha256 "88e060bd6ae4a9f421b762263562bd1b59b408c0ef3b158f2a83970207095052"
+  url "https://github.com/smallhadroncollider/taskell/archive/1.2.5.tar.gz"
+  sha256 "818055fcfe0656b3bcf00c37fdf2ddd5d2958bb169f5eda571bf4957e7aa64d8"
 
   depends_on "ghc" => :build
   depends_on "cabal-install" => :build
