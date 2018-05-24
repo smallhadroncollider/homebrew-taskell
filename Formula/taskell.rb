@@ -15,7 +15,7 @@ class Taskell < Formula
     cabal_sandbox do
       cabal_install "hpack"
       system "./.cabal-sandbox/bin/hpack"
-      install_cabal_package "-f", "release"
+      install_cabal_package
     end
   end
 
